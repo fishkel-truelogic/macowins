@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="abstractDao" abstract="true">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="billDao" class="com.ddsutn.macowins.model.dao.impl.BillDaoImpl" parent="abstractDao" />
+	<bean id="billItemDao" class="com.ddsutn.macowins.model.dao.impl.BillItemDaoImpl" parent="abstractDao" />
+	<bean id="itemDao" class="com.ddsutn.macowins.model.dao.impl.ItemDaoImpl" parent="abstractDao" />
+
+</beans>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.ddsutn.macowins.model.Bill" table="BILL">
+		<id name="id" type="java.lang.Long" >
+			<column name="ID" />
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="date" type="java.util.Date" >
+			<column name="DATE" />
+		</property>
+		
+		<property name="total" type="java.lang.Long">
+			<column name="TOTAL" />
+		</property>
+		
+		<list name="billItems" table="BILL_BILLITEMS" cascade="all" lazy="false" >
+			<key column="BILL_ID" />
+			<index column="INDEX"/>
+			<one-to-many class="com.ddsutn.macowins.model.BillItem" />
+		</list>
+	</class>
+</hibernate-mapping>

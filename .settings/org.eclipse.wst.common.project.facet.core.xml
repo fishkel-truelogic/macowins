@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <faceted-project>
-  <runtime name="macowins2"/>
+  <runtime name="macowins"/>
   <fixed facet="wst.jsdt.web"/>
   <installed facet="java" version="1.6"/>
   <installed facet="wst.jsdt.web" version="1.0"/>
