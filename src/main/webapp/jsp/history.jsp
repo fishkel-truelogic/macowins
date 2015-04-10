@@ -13,6 +13,38 @@ $(document).ready(function(){
 <style type="text/css">
 span {
 	margin: 10px;
+	background-color: red;
+	display: block;
+	width: 170px;
+	float: left;
+}
+
+ul {
+display: block;
+float: left;
+}
+
+li {
+display: block;
+float: left;
+}
+
+#calculate {
+	display: block;
+	width: 66px;
+	height: 20px;
+	background-color: grey;
+	color: black;
+	font-size: 15px;
+	font: -webkit-small-control;
+	border: solid;
+}
+
+body {
+	background-image: url("http://www.dw.de/image/0,,16990990_303,00.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #1111FF;
 }
 </style>
 </head>
